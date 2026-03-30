@@ -54,3 +54,14 @@ ragops-platform/
 ├── insights.py       # LLM-based insight generation
 ├── api.py            # REST API orchestration
 └── requirements.txt
+Vector Database Concept
+A vector database stores embeddings instead of normal text.Embedding = numerical representation of meaning
+Similar sentences have similar vectors.
+ vector DB enables semantic search instead of keyword search.
+Example:
+Query:
+"What is the capital of France?"
+System finds similar vector and retrieves:
+"The capital of France is Paris."
+ (venv) PS D:\ETT-RAGOps-Platform> $env:GEMINI_API_KEY="AIzaSyAMu16GL9ursJMySFBdy_Wy-rtXecgClkU"
+(venv) PS D:\ETT-RAGOps-Platform> python main.py
