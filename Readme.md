@@ -63,5 +63,3 @@ Query:
 "What is the capital of France?"
 System finds similar vector and retrieves:
 "The capital of France is Paris."
- (venv) PS D:\ETT-RAGOps-Platform> $env:GEMINI_API_KEY="AIzaSyAMu16GL9ursJMySFBdy_Wy-rtXecgClkU"
-(venv) PS D:\ETT-RAGOps-Platform> python main.py
