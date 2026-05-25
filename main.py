@@ -4,12 +4,18 @@ Main application entry point for RAGOps Platform.
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
+
+from app.api.observability import initialize_metrics_db
+
+initialize_metrics_db()
+
+print("Metrics database initialized.")
 from fastapi.responses import FileResponse
 import uvicorn
 import os
 
 from config import Settings
-from api import router
+from app.api import router
 
 # Initialize settings
 settings = Settings()
